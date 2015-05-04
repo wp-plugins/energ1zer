@@ -1,4 +1,4 @@
-=== @TODO: Plugin Name ===
+=== energ1zer ===
 Contributors: frankquebec
 Donate link: http://yipp.ca
 Tags: shortcode rich text edit layout responsive design thumbnails rounded
@@ -20,6 +20,20 @@ Features
 *   rounded thumbnails (bubbles) can be made automatically grayscale
 
 Wordpress sometime has the bad habit of screwing with your HTML markup when you switch from Html vs Text editor. When you do a nice design for a client, you want this design to stay in place. This plugin allows to insert shortcodes such as [br] to have permanent line breaks in your post. 
+
+== Usage ==
+
+= For line break that will not dispear when you edit the page =
+[br]
+
+= For spacing that will not break when you edit the page =
+
+[energ1zer spacer="5"]
+[energ1zer spacer="5" break="true"]  // will break:both floating elements
+
+= To render safely an email link, example someguy@gmail.com =
+
+<a class="jsEnerg1zerEmail" href="#email" data-username="someguy" data-domain="gmail.com"><img class=" size-full wp-image-94 alignleft" src="/wp-content/uploads/2015/04/contact-e4.png" alt="contact" width="133" height="17" /></a>
 
 == Installation ==
 
@@ -49,10 +63,6 @@ This section describes how to install the plugin and get it working.
 
 
 == Frequently Asked Questions ==
-
-= Why are you so awesome at making plugins =
-
-Thank you. I guess it is just a gift. 
 
 = What about the rounded thumbnails, how does it works? Do I have to do some processing to my images before uploading? =
 
